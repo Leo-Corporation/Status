@@ -11,7 +11,7 @@
   "dependencies": {
     "@inquirer/prompts": "^8.0.2",
     "@mdx-js/loader": "^3.1.1",
-    "@next/mdx": "16.0.10",
+    "@next/mdx": "16.1.0",
     "@radix-ui/react-separator": "^1.1.8",
     "@radix-ui/react-slot": "^1.2.4",
     "class-variance-authority": "^0.7.1",
