@@ -10,10 +10,11 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    default: "Status | Peyronnet Group",
-    template: "%s | Peyronnet Group",
+    default: "Status | Léo Corporation",
+    template: "%s | Léo Corporation",
   },
-  description: "Official Status page for Peyronnet's products and services.",
+  description:
+    "Official Status page for Léo Corporation's products and services.",
 };
 
 export default function RootLayout({
@@ -37,7 +38,8 @@ export default function RootLayout({
           </main>
           <footer className="flex flex-col gap-2 sm:flex-row py-3 w-full shrink-0 items-center px-4 md:px-6 border-t">
             <p className="text-xs text-muted-foreground">
-              &copy; {new Date().getFullYear()} GRP. All rights reserved.
+              &copy; {new Date().getFullYear()} Léo Corporation. All rights
+              reserved.
             </p>
             <nav className="sm:ml-auto flex items-center gap-4 sm:gap-6">
               <ThemeSwitcher />
