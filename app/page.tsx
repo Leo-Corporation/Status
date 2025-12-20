@@ -5,12 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Incident } from "@/lib/incident";
 import { parseAllIncidents } from "@/lib/incidentUtils";
-import {
-  getSystemStatus,
-  LeoCorpSystems,
-  PeyronnetSystems,
-  SynapsySystems,
-} from "@/lib/systems";
+import { getSystemStatus, LeoCorpSystems, SynapsySystems } from "@/lib/systems";
 import Link from "next/link";
 
 export default async function Home() {
@@ -64,20 +59,6 @@ export default async function Home() {
           <h2 className="text-2xl font-bold">Synapsy</h2>
           <div className="grid gap-6 mt-4">
             {SynapsySystems.map((system, i) => (
-              <StatusCard
-                key={i}
-                title={system.name}
-                status={getSystemStatus(openedIncidents, system.id)}
-              >
-                {getSystemChildren(system.id, system.description)}
-              </StatusCard>
-            ))}
-          </div>
-        </div>
-        <div>
-          <h2 className="text-2xl font-bold">Peyronnet</h2>
-          <div className="grid gap-6 mt-4">
-            {PeyronnetSystems.map((system, i) => (
               <StatusCard
                 key={i}
                 title={system.name}

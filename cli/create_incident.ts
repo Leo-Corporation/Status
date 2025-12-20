@@ -37,16 +37,7 @@ const SynapsySystems = [
     description: "Genidoc is operating normally.",
   },
 ];
-const PeyronnetSystems = [
-  {
-    id: "account",
-    name: "Account",
-    status: "up",
-    description:
-      "Our account services are operating normally, allowing users to connect across our products.",
-  },
-];
-const Systems = [...LeoCorpSystems, ...SynapsySystems, ...PeyronnetSystems];
+const Systems = [...LeoCorpSystems, ...SynapsySystems];
 const statuses = [
   { name: "Up", value: "up" },
   { name: "Partial Outage", value: "partial" },

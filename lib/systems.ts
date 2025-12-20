@@ -45,20 +45,7 @@ export const SynapsySystems: System[] = [
     description: "Genidoc is operating normally.",
   },
 ];
-export const PeyronnetSystems: System[] = [
-  {
-    id: "account",
-    name: "Account",
-    status: "up",
-    description:
-      "Our account services are operating normally, allowing users to connect across our products.",
-  },
-];
-export const Systems: System[] = [
-  ...LeoCorpSystems,
-  ...SynapsySystems,
-  ...PeyronnetSystems,
-];
+export const Systems: System[] = [...LeoCorpSystems, ...SynapsySystems];
 
 export function getNameFromId(id: string): string {
   for (let i = 0; i < Systems.length; i++) {
