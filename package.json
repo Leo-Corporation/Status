@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build && cd docs && echo status.peyronnet.group > CNAME && echo '' > .nojekyll",
+    "build": "next build && cd docs && echo status.leocorporation.dev > CNAME && echo '' > .nojekyll",
     "start": "next start",
     "lint": "next lint"
   },
