@@ -42,7 +42,7 @@ export default async function Home() {
     <div>
       <div className="space-y-8">
         <div>
-          <h2 className="text-2xl font-bold">Léo Corporation</h2>
+          <h2 className="text-2xl font-bold">Core Experiences</h2>
           <div className="grid gap-6 mt-4">
             {LeoCorpSystems.map((system, i) => (
               <StatusCard
