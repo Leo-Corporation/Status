@@ -40,24 +40,24 @@ To get started with the GRP Status Page, follow these steps:
 
 1. **Clone the repository**:
 
-   ```bash
-   git clone https://github.com/grp-org/status.git
-   cd status
-   ```
+    ```bash
+    git clone https://github.com/grp-org/status.git
+    cd status
+    ```
 
 2. **Install dependencies**:
 
-   ```bash
-   npm install
-   ```
+    ```bash
+    npm install
+    ```
 
 3. **Start the development server**:
 
-   ```bash
-   npm run dev
-   ```
+    ```bash
+    npm run dev
+    ```
 
-   The application should now be running at [http://localhost:3000](http://localhost:3000).
+    The application should now be running at [http://localhost:3000](http://localhost:3000).
 
 ## Usage
 
@@ -71,9 +71,9 @@ To document a new incident:
 
 1. Use the CLI tool to create a new incident file.
 
-   ```bash
-   node ./cli/create_incident.js
-   ```
+    ```bash
+    node ./cli/create_incident.js
+    ```
 
 2. Follow the prompts to enter the incident details, such as date, title, and description.
 
@@ -85,9 +85,9 @@ To edit an existing incident:
 
 1. Use the CLI tool to edit the incident file.
 
-   ```bash
-   node ./cli/edit_incident.js
-   ```
+    ```bash
+    node ./cli/edit_incident.js
+    ```
 
 2. Select the incident you wish to edit from the list and follow the prompts.
 
