@@ -1,0 +1,32 @@
+name: Build Next.js Site
+on:
+    push:
+        branches:
+            - deps
+    pull_request:
+        branches:
+            - main # This will trigger the workflow on pull requests targeting the main branch
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+
+            - name: Setup Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: 24.x
+
+            - name: Install dependencies
+              run: npm i --legacy-peer-deps
+
+            - name: Prettier
+              run: npm run prettier
+
+            - name: Lint
+              run: npm run lint
+
+            - name: Build
+              run: npm run build

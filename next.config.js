@@ -5,13 +5,15 @@ const withMDX = require("@next/mdx")({
         rehypePlugins: [],
     },
 });
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     // Configure `pageExtensions` to include MDX files
     pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
     output: "export",
-    distDir: "docs",
+    trailingSlash: true,
+    images: {
+        unoptimized: true,
+    },
 };
 
 module.exports = withMDX(nextConfig);
