@@ -6,7 +6,7 @@
         "dev": "next dev --turbopack",
         "build": "next build && cd docs && echo status.leocorporation.dev > CNAME && echo '' > .nojekyll",
         "start": "next start",
-        "lint": "next lint",
+        "lint": "eslint .",
         "prettier": "prettier --write ."
     },
     "dependencies": {
@@ -33,12 +33,12 @@
         "@types/node": "^25",
         "@types/react": "19.2.14",
         "@types/react-dom": "19.2.3",
-        "eslint": "^10",
+        "eslint": "^9.39.1",
         "eslint-config-next": "16.2.3",
         "postcss": "^8",
-        "tailwindcss": "^4.2.2",
-        "typescript": "^5",
         "prettier": "^3.8.2",
-        "prettier-plugin-tailwindcss": "^0.7.2"
+        "prettier-plugin-tailwindcss": "^0.7.2",
+        "tailwindcss": "^4.2.2",
+        "typescript": "^5"
     }
 }
