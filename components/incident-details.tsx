@@ -2,7 +2,7 @@ import { Incident, statusNames } from "@/lib/incident";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { Badge } from "./ui/badge";
 import { ClockIcon } from "lucide-react";
-import { getNameFromId, Status } from "@/lib/systems";
+import { Status } from "@/lib/systems";
 import UpdateSection from "./update-section";
 
 export default function IncidentDetailsCard({
