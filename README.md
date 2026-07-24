@@ -1,6 +1,8 @@
 # GRP Status Page
 
-This repository contains the source code for the GRP Status Page, a Next.js React TypeScript application built using [shadcn/ui](https://github.com/shadcn-ui/ui). The status page provides real-time and historical information on the operational status of various services provided by the GRP.
+This repository contains the source code for the GRP Status Page, a Next.js React TypeScript application built
+using [shadcn/ui](https://github.com/shadcn-ui/ui). The status page provides real-time and historical information on the
+operational status of various services provided by the GRP.
 
 ## Project Structure
 
@@ -21,7 +23,8 @@ The project's directory structure is as follows:
 
 ### Key Files and Folders
 
-- **`app/incidents/`**: Contains all the incident reports as `.mdx` files. Each incident is documented with a specific date and description.
+- **`app/incidents/`**: Contains all the incident reports as `.mdx` files. Each incident is documented with a specific
+  date and description.
 - **`app/incidents/[slug]/page.tsx`**: Dynamic route for displaying individual incident details.
 - **`app/incidents/page.tsx`**: Lists all incidents, providing an overview of the operational history.
 - **`app/layout.tsx`**: The layout component for the application.
@@ -97,9 +100,11 @@ To edit an existing incident:
 
 The `cli` directory contains scripts to help automate the process of creating and editing incidents.
 
-- **`create_incident.js` & `create_incident.ts`**: These scripts allow you to create a new incident by prompting you for the necessary details (date, title, description) and then generating an `.mdx` file in the `app/incidents/` directory.
+- **`create_incident.js` & `create_incident.ts`**: These scripts allow you to create a new incident by prompting you for
+  the necessary details (date, title, description) and then generating an `.mdx` file in the `app/incidents/` directory.
 
-- **`edit_incident.js` & `edit_incident.ts`**: These scripts enable you to edit an existing incident. They list all incidents and allow you to select one for editing.
+- **`edit_incident.js` & `edit_incident.ts`**: These scripts enable you to edit an existing incident. They list all
+  incidents and allow you to select one for editing.
 
 ### Usage Example
 

@@ -1,6 +1,7 @@
-import { input, select, checkbox } from "@inquirer/prompts";
+import { checkbox, input, select } from "@inquirer/prompts";
 import * as fs from "fs";
 import * as path from "path";
+
 const LeoCorpSystems = [
     {
         id: "web",
